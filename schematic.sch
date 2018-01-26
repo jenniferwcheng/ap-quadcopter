@@ -11370,6 +11370,14 @@ Source: www.kingbright.com</description>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="" package3d_urn="urn:adsk.eagle:package:15825/1"/>
 <part name="GND25" library="SparkFun" deviceset="GND" device=""/>
 <part name="R3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="100"/>
+<part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="10K"/>
+<part name="GND26" library="SparkFun" deviceset="GND" device=""/>
+<part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="10K"/>
+<part name="GND27" library="SparkFun" deviceset="GND" device=""/>
+<part name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="10K"/>
+<part name="GND28" library="SparkFun" deviceset="GND" device=""/>
+<part name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="10K"/>
+<part name="GND29" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11492,6 +11500,14 @@ Source: www.kingbright.com</description>
 <instance part="LED2" gate="G$1" x="78.74" y="106.68" rot="MR0"/>
 <instance part="GND25" gate="1" x="78.74" y="93.98"/>
 <instance part="R3" gate="G$1" x="78.74" y="116.84" rot="R90"/>
+<instance part="R4" gate="G$1" x="-198.12" y="-2.54" rot="R270"/>
+<instance part="GND26" gate="1" x="-198.12" y="-10.16"/>
+<instance part="R5" gate="G$1" x="-149.86" y="-2.54" rot="R270"/>
+<instance part="GND27" gate="1" x="-149.86" y="-10.16"/>
+<instance part="R11" gate="G$1" x="-198.12" y="-66.04" rot="R270"/>
+<instance part="GND28" gate="1" x="-198.12" y="-73.66"/>
+<instance part="R12" gate="G$1" x="-149.86" y="-66.04" rot="R270"/>
+<instance part="GND29" gate="1" x="-149.86" y="-73.66"/>
 </instances>
 <busses>
 </busses>
@@ -11784,6 +11800,22 @@ Source: www.kingbright.com</description>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <pinref part="GND25" gate="1" pin="GND"/>
 <wire x1="78.74" y1="101.6" x2="78.74" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="GND26" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="GND27" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12137,6 +12169,7 @@ Source: www.kingbright.com</description>
 <pinref part="U$2" gate="G$1" pin="G"/>
 <wire x1="-195.58" y1="2.54" x2="-198.12" y2="2.54" width="0.1524" layer="91"/>
 <label x="-198.12" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="U$1" pin="PD3(INT1)"/>
@@ -12161,6 +12194,7 @@ Source: www.kingbright.com</description>
 <pinref part="U$8" gate="G$1" pin="G"/>
 <wire x1="-195.58" y1="-60.96" x2="-198.12" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-198.12" y="-60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="U$1" pin="PD6(AIN0)"/>
