@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.3">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2933,6 +2933,18 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
+<library name="wurth">
+<packages>
+<package name="SLIDE_SWITCH">
+<smd name="P$1" x="2.5" y="3.5" dx="1.2" dy="1.5" layer="1"/>
+<smd name="P$2" x="0" y="3.5" dx="1.2" dy="1.5" layer="1"/>
+<smd name="P$3" x="-2.5" y="3.5" dx="1.2" dy="1.5" layer="1"/>
+<smd name="P$4" x="-2.5" y="-3" dx="1.2" dy="1.5" layer="1"/>
+<smd name="P$5" x="0" y="-3" dx="1.2" dy="1.5" layer="1"/>
+<smd name="P$6" x="2.5" y="-3" dx="1.2" dy="1.5" layer="1"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3022,6 +3034,7 @@ design rules under a new name.</description>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -3234,8 +3247,42 @@ design rules under a new name.</description>
 </element>
 <element name="C16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0805K" package3d_urn="urn:adsk.eagle:package:26201/1" value="10uF" x="-78.689225" y="-184.82673125"/>
 <element name="S2" library="adafruit" package="PUSHBUTTON_SMD_SJ" value="" x="-74.107496875" y="-190.594996875"/>
+<element name="S1" library="wurth" package="SLIDE_SWITCH" value="SLIDING_SIWTCH" x="-83.642453125" y="-188.196575"/>
 </elements>
 <signals>
+<signal name="VCC">
+<contactref element="U3" pad="2"/>
+<contactref element="U3" pad="3"/>
+<contactref element="C2" pad="1"/>
+<contactref element="C3" pad="1"/>
+<contactref element="R2" pad="2"/>
+<contactref element="U$4" pad="+"/>
+<contactref element="D1" pad="NEG"/>
+<contactref element="U$7" pad="+"/>
+<contactref element="D2" pad="NEG"/>
+<contactref element="U$10" pad="+"/>
+<contactref element="D3" pad="NEG"/>
+<contactref element="U$13" pad="+"/>
+<contactref element="D4" pad="NEG"/>
+<contactref element="R1" pad="1"/>
+<contactref element="C1" pad="1"/>
+<contactref element="S1" pad="P$6"/>
+<wire x1="-81.142453125" y1="-191.196575" x2="-79.342440625" y2="-111.721646875" width="0" layer="19" extent="1-1"/>
+<wire x1="-71.884909375" y1="-29.01904375" x2="-79.342440625" y2="-111.721646875" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.61" y1="56.88" x2="-71.884909375" y2="-29.01904375" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.53" y1="56.88" x2="-54.61" y2="56.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.45" y1="56.88" x2="-49.53" y2="56.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.37" y1="56.88" x2="-44.45" y2="56.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.42" y1="62.23" x2="-54.61" y2="56.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-64.5" y1="62.23" x2="-59.42" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.31" y1="63.78" x2="-64.5" y2="62.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-69.85" y1="63.78" x2="-67.31" y2="63.78" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.09" y1="48.26" x2="-39.37" y2="56.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.9" y1="67.105" x2="-39.37" y2="56.88" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.4" y1="67.105" x2="-25.9" y2="67.105" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.51" y1="70.13" x2="-25.4" y2="67.105" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.97" y1="70.13" x2="-16.51" y2="70.13" width="0" layer="19" extent="1-1"/>
+</signal>
 <signal name="N$2">
 <contactref element="U1" pad="29"/>
 <contactref element="R7" pad="1"/>
@@ -3569,38 +3616,10 @@ design rules under a new name.</description>
 <wire x1="-42.3926" y1="27.21" x2="-63.366671875" y2="-10.712221875" width="0" layer="19" extent="1-1"/>
 <wire x1="-45.3" y1="72.39" x2="-42.3926" y2="27.21" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PWR">
-<contactref element="C1" pad="1"/>
-<contactref element="U3" pad="2"/>
-<contactref element="U3" pad="3"/>
-<contactref element="C2" pad="1"/>
-<contactref element="C3" pad="1"/>
-<contactref element="R2" pad="2"/>
-<contactref element="U$4" pad="+"/>
-<contactref element="D1" pad="NEG"/>
-<contactref element="U$7" pad="+"/>
-<contactref element="D2" pad="NEG"/>
-<contactref element="U$10" pad="+"/>
-<contactref element="D3" pad="NEG"/>
-<contactref element="U$13" pad="+"/>
-<contactref element="D4" pad="NEG"/>
-<contactref element="R1" pad="1"/>
+<signal name="N$8">
 <contactref element="U$1" pad="+"/>
-<wire x1="-71.884909375" y1="-29.01904375" x2="-79.342440625" y2="-111.721646875" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.61" y1="56.88" x2="-71.884909375" y2="-29.01904375" width="0" layer="19" extent="1-1"/>
-<wire x1="-49.53" y1="56.88" x2="-54.61" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-44.45" y1="56.88" x2="-49.53" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.37" y1="56.88" x2="-44.45" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.29" y1="56.88" x2="-39.37" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.42" y1="62.23" x2="-54.61" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-64.5" y1="62.23" x2="-59.42" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-67.31" y1="63.78" x2="-64.5" y2="62.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-69.85" y1="63.78" x2="-67.31" y2="63.78" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.09" y1="48.26" x2="-34.29" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.9" y1="67.105" x2="-34.29" y2="56.88" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.4" y1="67.105" x2="-25.9" y2="67.105" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.51" y1="70.13" x2="-25.4" y2="67.105" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.97" y1="70.13" x2="-16.51" y2="70.13" width="0" layer="19" extent="1-1"/>
+<contactref element="S1" pad="P$5"/>
+<wire x1="-83.642453125" y1="-191.196575" x2="-34.29" y2="56.88" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
