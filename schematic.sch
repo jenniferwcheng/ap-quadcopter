@@ -17023,8 +17023,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
-<part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="10K"/>
-<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="M2309" package3d_urn="urn:adsk.eagle:package:26085/1" value="10K"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="100uF"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -17040,7 +17038,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="200K"/>
 <part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
-<part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="100pF"/>
+<part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="68pF"/>
 <part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="374K"/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="162K"/>
@@ -17052,6 +17050,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="C14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="C15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.1uF"/>
+<part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
+<part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 </parts>
 <sheets>
 <sheet>
@@ -17159,8 +17159,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R10" gate="G$1" x="139.7" y="111.76" rot="R90"/>
 <instance part="R13" gate="G$1" x="-193.04" y="-2.54" rot="R90"/>
 <instance part="R14" gate="G$1" x="-144.78" y="-2.54" rot="R90"/>
-<instance part="R15" gate="G$1" x="-193.04" y="-66.04" rot="R270"/>
-<instance part="R16" gate="G$1" x="-144.78" y="-66.04" rot="R270"/>
 <instance part="C1" gate="G$1" x="-147.32" y="116.84"/>
 <instance part="C8" gate="G$1" x="132.08" y="106.68" rot="R90"/>
 <instance part="C9" gate="G$1" x="147.32" y="88.9"/>
@@ -17194,6 +17192,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND10" gate="1" x="-48.26" y="78.74"/>
 <instance part="C14" gate="G$1" x="0" y="-43.18"/>
 <instance part="C15" gate="G$1" x="7.62" y="-43.18"/>
+<instance part="R15" gate="G$1" x="-193.04" y="-66.04" rot="R90"/>
+<instance part="R16" gate="G$1" x="-144.78" y="-66.04" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -17339,14 +17339,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="GND28" gate="1" pin="GND"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="GND33" gate="1" pin="GND"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 </segment>
@@ -17400,6 +17392,14 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="C15" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND28" gate="1" pin="GND"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND29" gate="1" pin="GND"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -17714,9 +17714,9 @@ Source: AVX .. aphvc.pdf</description>
 <net name="PWM3" class="0">
 <segment>
 <pinref part="T3" gate="G$1" pin="G"/>
-<wire x1="-190.5" y1="-60.96" x2="-193.04" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-195.58" y="-60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="-190.5" y1="-60.96" x2="-193.04" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="-193.04" y1="-60.96" x2="-195.58" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="-193.04" y="-60.96"/>
 </segment>
@@ -17734,9 +17734,9 @@ Source: AVX .. aphvc.pdf</description>
 </segment>
 <segment>
 <pinref part="T4" gate="G$1" pin="G"/>
-<wire x1="-142.24" y1="-60.96" x2="-144.78" y2="-60.96" width="0.1524" layer="91"/>
 <label x="-147.32" y="-60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
-<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-142.24" y1="-60.96" x2="-144.78" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="-144.78" y1="-60.96" x2="-147.32" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="-144.78" y="-60.96"/>
 </segment>
