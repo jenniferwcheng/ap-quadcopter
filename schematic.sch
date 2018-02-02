@@ -17547,26 +17547,26 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="TXD" class="0">
 <segment>
-<pinref part="J1" gate="G$1" pin="RXI"/>
-<wire x1="-38.1" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
-<label x="-35.56" y="15.24" size="1.016" layer="95" ratio="4" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U1" gate="U$1" pin="PD1(TXD)"/>
 <wire x1="223.52" y1="81.28" x2="228.6" y2="81.28" width="0.1524" layer="91"/>
 <label x="228.6" y="81.28" size="1.016" layer="95" ratio="4" xref="yes"/>
 </segment>
-</net>
-<net name="RXD" class="0">
 <segment>
 <pinref part="J1" gate="G$1" pin="TXO"/>
 <wire x1="-38.1" y1="12.7" x2="-35.56" y2="12.7" width="0.1524" layer="91"/>
-<label x="-35.56" y="12.7" size="1.016" layer="95" ratio="4" xref="yes"/>
+<label x="-35.56" y="12.7" size="1.016" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="RXD" class="0">
 <segment>
 <pinref part="U1" gate="U$1" pin="PD0(RXD)"/>
 <wire x1="223.52" y1="83.82" x2="228.6" y2="83.82" width="0.1524" layer="91"/>
 <label x="228.6" y="83.82" size="1.016" layer="95" ratio="4" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="RXI"/>
+<wire x1="-38.1" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
+<label x="-35.56" y="15.24" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CE" class="0">
