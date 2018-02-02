@@ -17038,7 +17038,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="200K"/>
 <part name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF"/>
 <part name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
-<part name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="68pF"/>
 <part name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF"/>
 <part name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="374K"/>
 <part name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="162K"/>
@@ -17052,6 +17051,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="C15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.1uF"/>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="65pF"/>
 </parts>
 <sheets>
 <sheet>
@@ -17180,7 +17180,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R4" gate="G$1" x="-63.5" y="121.92" rot="R90"/>
 <instance part="C3" gate="G$1" x="-53.34" y="124.46"/>
 <instance part="R5" gate="G$1" x="2.54" y="124.46" rot="R90"/>
-<instance part="C4" gate="G$1" x="2.54" y="116.84"/>
 <instance part="C5" gate="G$1" x="12.7" y="127"/>
 <instance part="R6" gate="G$1" x="22.86" y="124.46" rot="R90"/>
 <instance part="R8" gate="G$1" x="22.86" y="91.44" rot="R90"/>
@@ -17194,6 +17193,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="C15" gate="G$1" x="7.62" y="-43.18"/>
 <instance part="R15" gate="G$1" x="-193.04" y="-66.04" rot="R90"/>
 <instance part="R16" gate="G$1" x="-144.78" y="-66.04" rot="R90"/>
+<instance part="C4" gate="G$1" x="2.54" y="116.84"/>
 </instances>
 <busses>
 </busses>
@@ -17929,8 +17929,6 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="22.86" y="111.76"/>
 <wire x1="22.86" y1="96.52" x2="10.16" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="111.76" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<junction x="2.54" y="111.76"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <junction x="22.86" y="96.52"/>
@@ -17938,6 +17936,8 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="22.86" y1="104.14" x2="22.86" y2="96.52" width="0.1524" layer="91"/>
 <junction x="22.86" y="104.14"/>
 <pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<junction x="2.54" y="111.76"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -17960,7 +17960,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="N$14" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>

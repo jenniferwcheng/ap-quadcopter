@@ -2738,6 +2738,22 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="C1206" urn="urn:adsk.eagle:footprint:23125/1" library_version="3">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;</description>
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="-1.27" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="R0603" urn="urn:adsk.eagle:package:23555/2" type="model" library_version="3">
@@ -2747,6 +2763,9 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <description>CAPACITOR</description>
 </package3d>
 <package3d name="C0603" urn="urn:adsk.eagle:package:23616/2" type="model" library_version="3">
+<description>CAPACITOR</description>
+</package3d>
+<package3d name="C1206" urn="urn:adsk.eagle:package:23618/2" type="model" library_version="3">
 <description>CAPACITOR</description>
 </package3d>
 </packages3d>
@@ -3070,7 +3089,6 @@ design rules under a new name.</description>
 <element name="R4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="200K" x="-255.903175" y="70.306003125"/>
 <element name="C3" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="10uF" x="-254.7182625" y="55.675603125"/>
 <element name="R5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K" x="-255.903175" y="50.798803125"/>
-<element name="C4" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="68pF" x="-254.7182625" y="45.922003125"/>
 <element name="C5" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="22uF" x="-254.7182625" y="41.045203125"/>
 <element name="R6" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="374K" x="-255.903175" y="36.168403125"/>
 <element name="R8" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="162K" x="-255.903175" y="31.291603125"/>
@@ -3083,6 +3101,9 @@ design rules under a new name.</description>
 <element name="C15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="0.1uF" x="-254.7182625" y="-22.87224375"/>
 <element name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K" x="-255.903171875" y="-27.74904375"/>
 <element name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K" x="-255.903171875" y="-32.62584375"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="65pF" x="-254.903171875" y="-38.13764375">
+<attribute name="SPICEPREFIX" value="C" x="-254.903171875" y="-38.13764375" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="N$2">
@@ -3426,16 +3447,16 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$18">
 <contactref element="U3" pad="15"/>
-<contactref element="C4" pad="2"/>
 <contactref element="R6" pad="1"/>
 <contactref element="R8" pad="2"/>
 <contactref element="R7" pad="1"/>
 <contactref element="C7" pad="2"/>
+<contactref element="C4" pad="2"/>
 <wire x1="-256.753175" y1="26.414803125" x2="-253.8682625" y2="16.661203125" width="0" layer="19" extent="1-1"/>
 <wire x1="-255.053175" y1="31.291603125" x2="-256.753175" y2="26.414803125" width="0" layer="19" extent="1-1"/>
 <wire x1="-256.753175" y1="36.168403125" x2="-255.053175" y2="31.291603125" width="0" layer="19" extent="1-1"/>
-<wire x1="-253.8682625" y1="45.922003125" x2="-256.753175" y2="36.168403125" width="0" layer="19" extent="1-1"/>
 <wire x1="-203.113209375" y1="8.034984375" x2="-253.8682625" y2="16.661203125" width="0" layer="19" extent="1-1"/>
+<wire x1="-253.503171875" y1="-38.13764375" x2="-253.8682625" y2="16.661203125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="R7" pad="2"/>
@@ -3449,10 +3470,10 @@ design rules under a new name.</description>
 <wire x1="-255.5682625" y1="21.538003125" x2="-255.5682625" y2="16.661203125" width="0" layer="19" extent="1-1"/>
 <wire x1="-202.478209375" y1="8.034984375" x2="-255.5682625" y2="16.661203125" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$15">
+<signal name="N$14">
 <contactref element="R5" pad="1"/>
 <contactref element="C4" pad="1"/>
-<wire x1="-255.5682625" y1="45.922003125" x2="-256.753175" y2="50.798803125" width="0" layer="19" extent="1-1"/>
+<wire x1="-256.303171875" y1="-38.13764375" x2="-256.753175" y2="50.798803125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
