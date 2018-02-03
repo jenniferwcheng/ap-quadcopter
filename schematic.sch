@@ -17006,9 +17006,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND27" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND28" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND29" library="SparkFun" deviceset="GND" device=""/>
-<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="" package3d_urn="urn:adsk.eagle:package:15825/1" value="YELLOW"/>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
-<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="" package3d_urn="urn:adsk.eagle:package:15825/1" value="YELLOW"/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
 <part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="27pF"/>
@@ -17018,8 +17016,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="820"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="820"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="820"/>
-<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="RED"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="RED"/>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
@@ -17052,6 +17048,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R15" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R16" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="65pF"/>
+<part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="RED"/>
+<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="RED"/>
+<part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="YELLOW"/>
+<part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="YELLOW"/>
 </parts>
 <sheets>
 <sheet>
@@ -17134,9 +17134,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="GND27" gate="1" x="-144.78" y="-10.16"/>
 <instance part="GND28" gate="1" x="-193.04" y="-73.66"/>
 <instance part="GND29" gate="1" x="-144.78" y="-73.66"/>
-<instance part="LED3" gate="G$1" x="-60.96" y="-43.18" rot="MR0"/>
 <instance part="GND30" gate="1" x="-60.96" y="-55.88"/>
-<instance part="LED4" gate="G$1" x="-38.1" y="-43.18" rot="MR0"/>
 <instance part="GND31" gate="1" x="-38.1" y="-55.88"/>
 <instance part="GND32" gate="1" x="172.72" y="63.5"/>
 <instance part="C12" gate="G$1" x="165.1" y="71.12" smashed="yes">
@@ -17154,8 +17152,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R9" gate="G$1" x="66.04" y="106.68" rot="R90"/>
 <instance part="R12" gate="G$1" x="-60.96" y="-33.02" rot="R90"/>
 <instance part="R11" gate="G$1" x="-38.1" y="-33.02" rot="R90"/>
-<instance part="LED1" gate="G$1" x="-175.26" y="104.14" rot="MR270"/>
-<instance part="LED2" gate="G$1" x="66.04" y="96.52" rot="MR0"/>
 <instance part="R10" gate="G$1" x="139.7" y="111.76" rot="R90"/>
 <instance part="R13" gate="G$1" x="-193.04" y="-2.54" rot="R90"/>
 <instance part="R14" gate="G$1" x="-144.78" y="-2.54" rot="R90"/>
@@ -17194,6 +17190,10 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R15" gate="G$1" x="-193.04" y="-66.04" rot="R90"/>
 <instance part="R16" gate="G$1" x="-144.78" y="-66.04" rot="R90"/>
 <instance part="C4" gate="G$1" x="2.54" y="116.84"/>
+<instance part="LED1" gate="G$1" x="-175.26" y="104.14" rot="MR270"/>
+<instance part="LED2" gate="G$1" x="66.04" y="96.52"/>
+<instance part="LED3" gate="G$1" x="-60.96" y="-43.18"/>
+<instance part="LED4" gate="G$1" x="-38.1" y="-43.18"/>
 </instances>
 <busses>
 </busses>
@@ -17313,14 +17313,14 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="LED3" gate="G$1" pin="C"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="-60.96" y1="-48.26" x2="-60.96" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="LED4" gate="G$1" pin="C"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="-38.1" y1="-48.26" x2="-38.1" y2="-53.34" width="0.1524" layer="91"/>
+<pinref part="LED4" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="GND32" gate="1" pin="GND"/>
@@ -17781,16 +17781,16 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="-60.96" y1="-38.1" x2="-60.96" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="LED3" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="-38.1" y1="-38.1" x2="-38.1" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$1" class="0">
