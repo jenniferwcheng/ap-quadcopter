@@ -9542,81 +9542,6 @@ Source: www.kingbright.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="crystal" urn="urn:adsk.eagle:library:204">
-<description>&lt;b&gt;Crystals and Crystal Resonators&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="CSM-7X-DU" urn="urn:adsk.eagle:footprint:12034/1" library_version="1">
-<description>&lt;b&gt;SMD CRYSTAL&lt;/b&gt;&lt;p&gt;
-Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
-<wire x1="-5.575" y1="2.3" x2="-2.725" y2="2.3" width="0.2032" layer="51"/>
-<wire x1="-2.725" y1="2.3" x2="2.75" y2="2.3" width="0.2032" layer="51"/>
-<wire x1="2.75" y1="2.3" x2="5.55" y2="2.3" width="0.2032" layer="51"/>
-<wire x1="5.55" y1="2.3" x2="5.55" y2="-2.3" width="0.2032" layer="51"/>
-<wire x1="5.55" y1="-2.3" x2="-2.75" y2="-2.3" width="0.2032" layer="51"/>
-<wire x1="-2.75" y1="-2.3" x2="-5.575" y2="-2.3" width="0.2032" layer="51"/>
-<wire x1="-5.575" y1="-2.3" x2="-5.575" y2="2.3" width="0.2032" layer="51"/>
-<wire x1="-2.75" y1="-2.3" x2="-2.725" y2="2.3" width="0.2032" layer="51" curve="-180"/>
-<wire x1="2.75" y1="2.3" x2="2.725" y2="-2.3" width="0.2032" layer="51" curve="-180"/>
-<smd name="1" x="-4.75" y="0" dx="5.5" dy="2" layer="1"/>
-<smd name="2" x="4.75" y="0" dx="5.5" dy="2" layer="1"/>
-<text x="-7.6288" y="2.5334" size="1.27" layer="25">&gt;NAME</text>
-<text x="-7.6288" y="-4.3114" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="CSM-7X-DU" urn="urn:adsk.eagle:package:12105/1" type="box" library_version="1">
-<description>SMD CRYSTAL
-Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="Q" urn="urn:adsk.eagle:symbol:11991/1" library_version="1">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CSM-7X-DU" urn="urn:adsk.eagle:component:12145/1" prefix="Q" library_version="1">
-<description>&lt;b&gt;SMD CRYSTAL&lt;/b&gt;&lt;p&gt;
-Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
-<gates>
-<gate name="P" symbol="Q" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CSM-7X-DU">
-<connects>
-<connect gate="P" pin="1" pad="1"/>
-<connect gate="P" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:12105/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -16963,6 +16888,60 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="NDK">
+<packages>
+<package name="NX3225GD-CRA-3">
+<smd name="P$1" x="0.95" y="0" dx="2.7" dy="1.5" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.95" y="0" dx="2.7" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-1.65" y1="1.3" x2="-1.65" y2="-1.3" width="0.0762" layer="21"/>
+<wire x1="-1.65" y1="1.3" x2="1.65" y2="1.3" width="0.0762" layer="21"/>
+<wire x1="1.65" y1="1.3" x2="1.65" y2="-1.3" width="0.0762" layer="21"/>
+<wire x1="-1.65" y1="-1.3" x2="1.65" y2="-1.3" width="0.0762" layer="21"/>
+<wire x1="-1.75" y1="1.32" x2="-1.75" y2="1.31" width="0.1" layer="39"/>
+<wire x1="-1.75" y1="1.31" x2="-1.75" y2="-1.39" width="0.1" layer="39"/>
+<wire x1="-1.75" y1="-1.4" x2="1.75" y2="-1.4" width="0.1" layer="39"/>
+<wire x1="1.75" y1="-1.4" x2="1.75" y2="1.39" width="0.1" layer="39"/>
+<wire x1="1.75" y1="1.4" x2="-1.75" y2="1.4" width="0.1" layer="39"/>
+<wire x1="-1.75" y1="1.4" x2="-1.75" y2="1.32" width="0.1" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CRYSTAL">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NX3225GD">
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NX3225GD-CRA-3">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17011,9 +16990,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND30" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
-<part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="27pF"/>
-<part name="C13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="27pF"/>
-<part name="Q1" library="crystal" library_urn="urn:adsk.eagle:library:204" deviceset="CSM-7X-DU" device="" package3d_urn="urn:adsk.eagle:package:12105/1" value="8MHz"/>
+<part name="C12" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="8pF"/>
+<part name="C13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:26138/1" value="8pF"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="820"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="820"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/2" value="820"/>
@@ -17053,6 +17031,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="LED4" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="YELLOW"/>
 <part name="J2" library="quad" deviceset="FTDI_DEVICE" device=""/>
 <part name="U$2" library="LTC3534" deviceset="LTC3534" device=""/>
+<part name="Q1" library="NDK" deviceset="NX3225GD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17144,9 +17123,6 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="176.276" y="71.755" size="1.778" layer="95"/>
 <attribute name="VALUE" x="176.276" y="66.929" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="P" x="170.18" y="73.66" smashed="yes">
-<attribute name="VALUE" x="170.18" y="76.2" size="1.778" layer="96"/>
-</instance>
 <instance part="R1" gate="G$1" x="-185.42" y="104.14"/>
 <instance part="R12" gate="G$1" x="-60.96" y="-33.02" rot="R90"/>
 <instance part="R11" gate="G$1" x="-38.1" y="-33.02" rot="R90"/>
@@ -17192,6 +17168,9 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="LED4" gate="G$1" x="-38.1" y="-43.18"/>
 <instance part="J2" gate="G$1" x="-43.18" y="15.24" rot="R180"/>
 <instance part="U$2" gate="G$1" x="-25.4" y="114.3"/>
+<instance part="Q1" gate="G$1" x="170.18" y="73.66" smashed="yes">
+<attribute name="NAME" x="170.18" y="77.216" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -17393,17 +17372,6 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="73.66" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="U1" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
-<wire x1="175.26" y1="76.2" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="76.2" x2="172.72" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="P" pin="2"/>
-<junction x="172.72" y="73.66"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -17774,17 +17742,6 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="LED4" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="U1" gate="U$1" pin="PB6(XTAL1/TOSC1)"/>
-<wire x1="175.26" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="167.64" y1="81.28" x2="167.64" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="P" pin="1"/>
-<junction x="167.64" y="73.66"/>
-</segment>
-</net>
 <net name="PWR" class="0">
 <segment>
 <label x="-165.1" y="124.46" size="1.27" layer="95" xref="yes"/>
@@ -17945,6 +17902,27 @@ Source: AVX .. aphvc.pdf</description>
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="C4" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="U1" gate="U$1" pin="PB6(XTAL1/TOSC1)"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="81.28" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="81.28" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="73.66" x2="165.1" y2="73.66" width="0.1524" layer="91"/>
+<junction x="165.1" y="73.66"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="U1" gate="U$1" pin="PB7(XTAL2/TOSC2)"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="76.2" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="73.66" x2="175.26" y2="73.66" width="0.1524" layer="91"/>
+<junction x="175.26" y="73.66"/>
 </segment>
 </net>
 </nets>
