@@ -3574,8 +3574,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="9.1948" y="11.5316"/>
 <vertex x="9.3218" y="11.6586"/>
 </polygon>
-<wire x1="22.3712" y1="21.367" x2="22.4926" y2="21.4884" width="0.381" layer="1"/>
-<wire x1="22.3712" y1="19.812" x2="22.3712" y2="21.367" width="0.508" layer="1"/>
 <wire x1="2.755" y1="18.796" x2="2.9836" y2="18.8214" width="0.381" layer="1"/>
 <wire x1="2.9836" y1="18.8214" x2="4.0776" y2="18.796" width="0.381" layer="1"/>
 <wire x1="7.5438" y1="14.1303" x2="7.5692" y2="14.1557" width="0.381" layer="1"/>
@@ -3583,7 +3581,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="23.9712" y1="19.812" x2="23.9712" y2="18.2816" width="0.5842" layer="1"/>
 <wire x1="23.9712" y1="18.2816" x2="23.8506" y2="18.161" width="0.5842" layer="1"/>
 <wire x1="23.9712" y1="18.2816" x2="23.9776" y2="18.288" width="0.5842" layer="1"/>
-<wire x1="23.9776" y1="18.288" x2="23.9776" y2="18.7706" width="0.5842" layer="1"/>
+<wire x1="23.9776" y1="18.7706" x2="23.9776" y2="18.288" width="0.5842" layer="1"/>
 <wire x1="21.3301" y1="10.1913" x2="21.5712" y2="10.4324" width="0.508" layer="1"/>
 <wire x1="21.5712" y1="10.4324" x2="21.5712" y2="11.2268" width="0.508" layer="1"/>
 <wire x1="20.8416" y1="9.7028" x2="20.6864" y2="9.858" width="0.508" layer="1"/>
@@ -3689,6 +3687,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="8.1534" y1="12.954" x2="8.1534" y2="13.7414" width="0.762" layer="1"/>
 <wire x1="7.9296" y1="13.9652" x2="7.56525" y2="13.9652" width="0.762" layer="1"/>
 <wire x1="8.1534" y1="13.7414" x2="7.9296" y2="13.9652" width="0.762" layer="1"/>
+<wire x1="21.3301" y1="10.1913" x2="21.3301" y2="10.2965625" width="0.508" layer="1"/>
+<wire x1="21.3301" y1="10.2965625" x2="21.457" y2="10.4234625" width="0.508" layer="1"/>
+<wire x1="21.457" y1="12.4014" x2="21.5712" y2="12.5156" width="0.508" layer="1"/>
+<wire x1="21.457" y1="10.4234625" x2="21.457" y2="12.4014" width="0.508" layer="1"/>
+<wire x1="22.4926" y1="21.4884" x2="22.3712" y2="21.367" width="0.508" layer="1"/>
+<wire x1="22.3712" y1="21.367" x2="22.3712" y2="19.812" width="0.508" layer="1"/>
+<wire x1="23.9712" y1="19.812" x2="23.9776" y2="19.8056" width="0.508" layer="1"/>
+<wire x1="23.9776" y1="19.8056" x2="23.9776" y2="18.7706" width="0.508" layer="1"/>
 </signal>
 <signal name="V_BAT">
 <contactref element="R2" pad="1"/>
