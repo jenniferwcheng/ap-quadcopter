@@ -4014,7 +4014,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="18.135" y1="5.7912" x2="19.9644" y2="5.842" width="0.762" layer="16"/>
 <wire x1="20.1328" y1="5.6736" x2="20.1582" y2="2.8956" width="0.762" layer="16"/>
 <wire x1="19.9644" y1="5.842" x2="20.1328" y2="5.6736" width="0.762" layer="16"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="1" thermals="no">
 <vertex x="41.6814" y="0.4826"/>
 <vertex x="42.0116" y="0.8128"/>
 <vertex x="42.0116" y="2.8702"/>
@@ -4136,6 +4136,15 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="6.858" y1="11.0236" x2="6.5659" y2="11.0236" width="0.381" layer="1"/>
 <wire x1="6.858" y1="11.0236" x2="6.858" y2="10.2743" width="0.381" layer="1"/>
 <wire x1="6.858" y1="10.2743" x2="6.5659" y2="9.9822" width="0.381" layer="1"/>
+<wire x1="38.4208" y1="2.921" x2="38.4208" y2="3.3368" width="0.762" layer="1"/>
+<wire x1="38.4208" y1="3.3368" x2="38.1254" y2="3.6322" width="0.762" layer="1"/>
+<wire x1="38.1254" y1="3.6322" x2="37.7952" y2="3.302" width="0.762" layer="1"/>
+<wire x1="37.7952" y1="2.7178" x2="38.1762" y2="2.3368" width="0.762" layer="1"/>
+<wire x1="38.1762" y1="2.3368" x2="38.7096" y2="2.3368" width="0.762" layer="1"/>
+<wire x1="39.1414" y1="3.302" x2="38.8112" y2="3.6322" width="0.762" layer="1"/>
+<wire x1="37.7952" y1="3.302" x2="37.7952" y2="2.7178" width="0.762" layer="1"/>
+<wire x1="38.7096" y1="2.3368" x2="39.1414" y2="2.7686" width="0.762" layer="1"/>
+<wire x1="39.1414" y1="2.7686" x2="39.1414" y2="3.302" width="0.762" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="L1" pad="1"/>
