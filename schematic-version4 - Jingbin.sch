@@ -16998,7 +16998,6 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R10" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
 <part name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:26057/1" value="10K"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1210" package3d_urn="urn:adsk.eagle:package:23619/2" value="100uF"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="0.1uF"/>
@@ -17032,6 +17031,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="J2" library="quad" deviceset="FTDI_DEVICE" device=""/>
 <part name="U$2" library="LTC3534" deviceset="LTC3534" device=""/>
 <part name="Q1" library="NDK" deviceset="NX3225GD" device=""/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -17129,7 +17129,6 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R10" gate="G$1" x="139.7" y="111.76" rot="R90"/>
 <instance part="R13" gate="G$1" x="-193.04" y="-2.54" rot="R90"/>
 <instance part="R14" gate="G$1" x="-144.78" y="-2.54" rot="R90"/>
-<instance part="C1" gate="G$1" x="-147.32" y="116.84"/>
 <instance part="C8" gate="G$1" x="132.08" y="106.68" rot="R90"/>
 <instance part="C9" gate="G$1" x="147.32" y="88.9"/>
 <instance part="C10" gate="G$1" x="154.94" y="88.9"/>
@@ -17171,6 +17170,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="Q1" gate="G$1" x="170.18" y="73.66" smashed="yes">
 <attribute name="NAME" x="170.18" y="77.216" size="1.778" layer="95"/>
 </instance>
+<instance part="C1" gate="G$1" x="-147.32" y="116.84"/>
 </instances>
 <busses>
 </busses>
