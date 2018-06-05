@@ -5,11 +5,31 @@
 void readReg(uint8_t reg, uint8_t *buf, size_t len)
 {
     // TODO: Implement
+	//page 36
+	Wire.beginTransmission(0x68); //start condition?
+	Wire.write(reg); 
+	Wire.endTransmission(false); 
+	
+	//restarts
+	//Wire.endTransmission(false);
+	Wire.requestFrom(0x68,len); //request the reg
+	for (int i = 0; i < len; i++) {
+		//while(!Wire.available()){}
+		buf[i] = Wire.read();
+	}
+	Wire.endTransmission();
+	
 }
 
 void writeReg(uint8_t reg, uint8_t *buf, size_t len)
 {
     // TODO: Implement
+	//page 35
+	
+	Wire.beginTransmission(byte(0x68)); // send AD+W = 0x68 + W bit (0)
+	Wire.write(reg); // send RA
+	Wire.write(buf,len); // send DATA
+	Wire.endTransmission(true); //send stop signal
 }
 
 float vector_normalize(struct vector *raw, struct vector *unit)
@@ -71,4 +91,5 @@ float vector_pitch(struct vector *v)
 {
   return -atan2(v->y, v->z);
 }
+
 

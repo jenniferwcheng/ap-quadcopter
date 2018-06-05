@@ -87,3 +87,4 @@ void quaternion_multiply(struct quaternion *q1, struct quaternion *q2, struct qu
 float vector_roll(struct vector *v);
 
 float vector_pitch(struct vector *v);
+
