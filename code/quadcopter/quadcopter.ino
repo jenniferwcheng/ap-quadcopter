@@ -27,10 +27,11 @@ void loop() {
   digitalWrite(debug1,HIGH);
   digitalWrite(debug2,HIGH);
 
-  for(int i = 0; i < 100; i++){
-    analogWrite(PWM1,i);
-    delay(10);
-  }
+  analogWrite(PWM4,10);
+  analogWrite(PWM3,10);
+  analogWrite(PWM2,10);
+  analogWrite(PWM1,10);
+  delay(1000);
 
   digitalWrite(debug1,LOW);
   digitalWrite(debug2,LOW);
