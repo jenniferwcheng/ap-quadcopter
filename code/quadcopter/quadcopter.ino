@@ -15,7 +15,7 @@
 #define MISO 12
 
 void setup() {
-  setup_gyro();
+  //setup_gyro();
   pinMode(PWM1,OUTPUT);
   pinMode(PWM2,OUTPUT);
   pinMode(PWM3,OUTPUT);
@@ -25,7 +25,7 @@ void setup() {
 }
 
 void loop() {
-  loop_gyro();
+  //loop_gyro();
   digitalWrite(debug1,HIGH);
   digitalWrite(debug2,HIGH);
 
